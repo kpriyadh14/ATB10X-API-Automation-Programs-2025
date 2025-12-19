@@ -1,7 +1,15 @@
-package Payload_manual;
+package GSON;
 
-public class BookingDates {
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Bookingdates {
+
+    @SerializedName("checkin")
+    @Expose
     private String checkin;
+    @SerializedName("checkout")
+    @Expose
     private String checkout;
 
     public String getCheckin() {
@@ -19,4 +27,5 @@ public class BookingDates {
     public void setCheckout(String checkout) {
         this.checkout = checkout;
     }
+
 }

@@ -7,7 +7,7 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
-public class Ex_11_PUT_Request_NON_BDD {
+public class Ex_12_PUT_Request_NON_BDD {
 
     RequestSpecification r;
     Response response;

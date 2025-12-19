@@ -1,15 +1,29 @@
-package Payload_AI;
+package GSON;
 
-public class booking {
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
+    public class Booking {
+
+        @SerializedName("firstname")
+        @Expose
         private String firstname;
+        @SerializedName("lastname")
+        @Expose
         private String lastname;
-        private int totalprice;
-        private boolean depositpaid;
-        private BookingDates bookingdates;
+        @SerializedName("totalprice")
+        @Expose
+        private Integer totalprice;
+        @SerializedName("depositpaid")
+        @Expose
+        private Boolean depositpaid;
+        @SerializedName("bookingdates")
+        @Expose
+        private Bookingdates bookingdates;
+        @SerializedName("additionalneeds")
+        @Expose
         private String additionalneeds;
 
-        // Getter and Setter
         public String getFirstname() {
             return firstname;
         }
@@ -26,26 +40,27 @@ public class booking {
             this.lastname = lastname;
         }
 
-        public int getTotalprice() {
+        public Integer getTotalprice() {
             return totalprice;
         }
 
-        public void setTotalprice(int totalprice) {
+        public void setTotalprice(Integer totalprice) {
             this.totalprice = totalprice;
         }
 
-        public boolean isDepositpaid() {
+        public Boolean getDepositpaid() {
             return depositpaid;
         }
-        public void setDepositpaid(boolean depositpaid) {
+
+        public void setDepositpaid(Boolean depositpaid) {
             this.depositpaid = depositpaid;
         }
 
-        public BookingDates getBookingdates() {
+        public Bookingdates getBookingdates() {
             return bookingdates;
         }
 
-        public void setBookingdates(BookingDates bookingdates) {
+        public void setBookingdates(Bookingdates bookingdates) {
             this.bookingdates = bookingdates;
         }
 
@@ -56,5 +71,6 @@ public class booking {
         public void setAdditionalneeds(String additionalneeds) {
             this.additionalneeds = additionalneeds;
         }
+
     }
 

@@ -4,7 +4,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Ex_15 {
+public class Ex_15_before_test {
     // 1. Get token
     // 2. get booking ID
     // 3. test PUT

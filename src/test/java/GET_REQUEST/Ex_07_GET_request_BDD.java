@@ -3,7 +3,7 @@ package GET_REQUEST;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
-public class Ex_07_GET_request {
+public class Ex_07_GET_request_BDD {
     @Test
     public void Testcase1() {
         String pincode = "560016";
